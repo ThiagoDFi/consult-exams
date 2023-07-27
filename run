@@ -1,0 +1,10 @@
+#!/bin/bash
+
+docker run \
+  --rm \
+  --name exams-consult \
+  -w /app \
+  -v $(pwd):/app \
+  -p 4000:4000 \
+  ruby \
+  bash -c "bundle install && ruby server.rb"
