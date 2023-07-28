@@ -21,7 +21,7 @@ const app = Vue.createApp({
           crm: item.doctor.crm,
           crm_state: item.doctor.crm_state,
           docName: item.doctor.name,
-          tests: item.tests // Include the tests array directly in the object
+          tests: item.tests
         };
       });
     }
